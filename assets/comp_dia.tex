@@ -1,0 +1,21 @@
+\begin{figure}
+\begin{tikzpicture}
+\node [circle, fill=blue!20!green, text=white, text width=2cm] (dc) {Diabetic Complications};
+\node [draw=none, rectangle, below=of dc,text width=2cm, fill=blue!40!red, text=white] (dfu) {Diabetic Foot Ulcer};
+
+\node [draw, rectangle, below=of dc, left=of dfu, text width=2cm] (dh) {Heart Attack};
+\node [draw, rectangle, below=of dc, left=of dh, text width=2cm] (do) {Oral Health};
+
+\node [draw, rectangle, below=of dc,right=of dfu, text width=2cm] (dn) {Diabetic Nephropathy};
+\node [draw, rectangle, below=of dc,right=of dn, text width=2cm] (dr) {Diabetic Retinopathy};
+
+
+\draw[->, thick] (dc) -- (dfu);
+\draw[->, thick] (dc) -| (dn);
+\draw[->, thick] (dc) -| (dr);
+\draw[->, thick] (dc) -| (dh);
+\draw[->, thick] (dc) -| (do);
+
+\end{tikzpicture}
+\caption{Complication of diabeties}
+\end{figure}

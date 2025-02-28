@@ -1,0 +1,56 @@
+\begin{table}[]
+\centering
+\begin{tabularx}{\linewidth}{|X|X|X|X|}
+\hline
+\textbf{Topic} & \textbf{General Methodology} & \textbf{Limitations} & \textbf{Limitation addressed} \\ \hline
+
+Dataset & NA & 
+\begin{itemize}
+    \item{Imbalanced Dataset}
+    \item{Limited Dataset}
+    \item{Non Diverse}
+\end{itemize}
+& Contrastive Learning  \\ \hline
+
+Asymmetric Analysis & Computing Descriptive Statistics 
+\begin{itemize}
+    \item{Mean}
+    \item{Variance}
+\end{itemize}
+Significance Test to Find Whether it is Abnormal or not &
+Inapplicable in case of 
+\begin{itemize}
+    \item{Amputated Patient}
+    \item{Patient where both feet affected}
+\end{itemize} & \\ \hline
+
+Feature Extraction
+and 
+Shallow Learning Approaches & 
+
+Involves Feature extraction 
+    \begin{itemize}
+    \item{Textural (GLCM, DWT)}
+    \item{Histogram (Mean, Variance)}
+    \end{itemize}
+Using these Feature to classify using Shallow Learning Classifier 
+& 
+\center{
+\begin{itemize}
+\item{Handcrafted Feature dont generalise well.}
+\item{Global features lose Spatial Pattern Information.}
+\end{itemize}
+}
+& 
+\begin{itemize}
+\item{Dividing Image To Patches}
+\item{Features For Each Patch}
+\end{itemize}
+\\ \hline
+
+
+Deep Learning and Hybrid Approaches & Supervised Learning with some variation of CNN Mode & Overfitting due to lack of data & Contrastive Learning (Siamese Network)\\ \hline
+\end{tabularx}
+\caption{Research Gaps}
+\end{table}
+

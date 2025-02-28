@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="169.95332"
+   height="97.818665"
+   viewBox="0 0 169.95332 97.818665"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <g
+     id="g8"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,97.818667)">
+    <g
+       id="g10"
+       transform="translate(63.732,36.682)">
+      <g
+         id="g12">
+        <g
+           id="g14">
+          <g
+             id="g16">
+            <g
+               id="g18">
+              <path
+                 d="M 36.6825,0 C 36.6825,20.25943 20.25943,36.6825 0,36.6825 -20.25943,36.6825 -36.6825,20.25943 -36.6825,0 c 0,-20.25943 16.42307,-36.6825 36.6825,-36.6825 20.25943,0 36.6825,16.42307 36.6825,36.6825 z"
+                 style="fill:#00cc33;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 id="path20" />
+            </g>
+            <g
+               id="g22"
+               transform="translate(-28.346,8.496)">
+              <g
+                 id="g24">
+                <g
+                   id="g26"
+                   transform="translate(-35.386,-45.178)">
+                  <text
+                     xml:space="preserve"
+                     transform="matrix(1,0,0,-1,35.386,45.178)"
+                     style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                     id="text34"><tspan
+                       x="0 7.6104302 10.37804 15.359341 21.173513 25.600893 29.475348 32.242958"
+                       y="0"
+                       id="tspan28">Diabetic</tspan><tspan
+                       x="0 7.1949897 12.17629 20.478125 26.013346 28.780954 31.548565 35.975945 40.957245"
+                       y="11.955"
+                       id="tspan30">Complica-</tspan><tspan
+                       x="0 3.8744552 6.6420655 11.623365 17.158587"
+                       y="23.91"
+                       id="tspan32">tions</tspan></text>
+                  <g
+                     id="g36"
+                     transform="translate(35.386,45.178)" />
+                </g>
+              </g>
+              <g
+                 id="g38"
+                 transform="translate(28.346,-8.496)" />
+            </g>
+          </g>
+          <g
+             id="g40">
+            <g
+               id="g42">
+              <path
+                 d="M -31.66737,-25.71428 H 31.66738 V -0.19925 H -31.66737 Z"
+                 style="fill:#990066;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                 id="path44" />
+            </g>
+            <g
+               id="g46"
+               transform="translate(-28.346,-10.438)">
+              <g
+                 id="g48">
+                <g
+                   id="g50"
+                   transform="translate(-35.386,-26.244)">
+                  <text
+                     xml:space="preserve"
+                     transform="matrix(1,0,0,-1,35.386,26.244)"
+                     style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                     id="text56"><tspan
+                       x="0 7.6104302 10.37804 15.359341 21.173513 25.600893 29.475348 32.242958"
+                       y="0"
+                       id="tspan52">Diabetic</tspan><tspan
+                       x="0 5.6766896 10.92698 15.908279 23.110243 30.582193 33.349804 37.777184 42.204563"
+                       y="11.955"
+                       id="tspan54">FootUlcer</tspan></text>
+                  <g
+                     id="g58"
+                     transform="translate(35.386,26.244)" />
+                </g>
+              </g>
+              <g
+                 id="g60"
+                 transform="translate(28.346,10.438)" />
+            </g>
+          </g>
+          <g
+             id="g62">
+            <path
+               d="M -63.534,-12.70216 H -0.19925 V 12.70217 H -63.534 Z"
+               style="fill:none;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path64" />
+            <g
+               id="g66"
+               transform="translate(-60.212,2.574)">
+              <g
+                 id="g68">
+                <g
+                   id="g70"
+                   transform="translate(-3.52,-39.256)">
+                  <text
+                     xml:space="preserve"
+                     transform="matrix(1,0,0,-1,3.52,39.256)"
+                     style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                     id="text76"><tspan
+                       x="0 7.4719501 11.899329 16.880629 20.78298 27.974981 35.17794 39.052395"
+                       y="0"
+                       id="tspan72">HeartAt-</tspan><tspan
+                       x="0 3.8744552 8.8557549 13.004182"
+                       y="11.955"
+                       id="tspan74">tack</tspan></text>
+                  <g
+                     id="g78"
+                     transform="translate(3.52,39.256)" />
+                </g>
+              </g>
+              <g
+                 id="g80"
+                 transform="translate(60.212,-2.574)" />
+            </g>
+          </g>
+          <g
+             id="g82">
+            <path
+               d="M -63.534,-6.77985 H -0.19925 V 6.77986 H -63.534 Z"
+               style="fill:none;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path84" />
+            <g
+               id="g86"
+               transform="translate(-60.212,-3.459)">
+              <g
+                 id="g88">
+                <g
+                   id="g90"
+                   transform="translate(-3.52,-33.223)">
+                  <text
+                     xml:space="preserve"
+                     transform="matrix(1,0,0,-1,3.52,33.223)"
+                     style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                     id="text94"><tspan
+                       x="0 7.7489104 11.65126 16.632561 22.717716 30.189667 34.617046 39.598347 42.365955 46.24041"
+                       y="0"
+                       id="tspan92">OralHealth</tspan></text>
+                  <g
+                     id="g96"
+                     transform="translate(3.52,33.223)" />
+                </g>
+              </g>
+              <g
+                 id="g98"
+                 transform="translate(60.212,3.459)" />
+            </g>
+          </g>
+          <g
+             id="g100">
+            <path
+               d="M 0.19925,-19.70378 H 63.534 V 19.70378 H 0.19925 Z"
+               style="fill:none;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path102" />
+            <g
+               id="g104"
+               transform="translate(3.52,9.465)">
+              <g
+                 id="g106">
+                <g
+                   id="g108"
+                   transform="translate(-67.252,-46.147)">
+                  <text
+                     xml:space="preserve"
+                     transform="matrix(1,0,0,-1,67.252,46.147)"
+                     style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                     id="text116"><tspan
+                       x="0 7.6104302 10.37804 15.359341 21.173513 25.600893 29.475348 32.242958"
+                       y="0"
+                       id="tspan110">Diabetic</tspan><tspan
+                       x="0 7.4719501 11.899329 17.434549 22.96977 26.872122 31.85342 37.388641 42.369942"
+                       y="11.956"
+                       id="tspan112">Nephropa-</tspan><tspan
+                       x="0 3.8744552 9.130723"
+                       y="23.910999"
+                       id="tspan114">thy</tspan></text>
+                  <g
+                     id="g118"
+                     transform="translate(67.252,46.147)" />
+                </g>
+              </g>
+              <g
+                 id="g120"
+                 transform="translate(-3.52,-9.465)" />
+            </g>
+          </g>
+          <g
+             id="g122">
+            <path
+               d="M 0.19925,-19.70378 H 63.534 V 19.70378 H 0.19925 Z"
+               style="fill:none;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path124" />
+            <g
+               id="g126"
+               transform="translate(3.52,9.465)">
+              <g
+                 id="g128">
+                <g
+                   id="g130"
+                   transform="translate(-67.252,-46.147)">
+                  <text
+                     xml:space="preserve"
+                     transform="matrix(1,0,0,-1,67.252,46.147)"
+                     style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                     id="text138"><tspan
+                       x="0 7.6104302 10.37804 15.359341 21.173513 25.600893 29.475348 32.242958"
+                       y="0"
+                       id="tspan132">Diabetic</tspan><tspan
+                       x="0 7.3334699 11.760849 15.635304 18.402914 23.938135 28.919436 34.454655 39.435955"
+                       y="11.956"
+                       id="tspan134">Retinopa-</tspan><tspan
+                       x="0 3.8744552 9.130723"
+                       y="23.910999"
+                       id="tspan136">thy</tspan></text>
+                  <g
+                     id="g140"
+                     transform="translate(67.252,46.147)" />
+                </g>
+              </g>
+              <g
+                 id="g142"
+                 transform="translate(-3.52,-9.465)" />
+            </g>
+          </g>
+          <g
+             id="g144">
+            <path
+               d="M 0,0 V 0.70735"
+               style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path146" />
+            <g
+               id="g148"
+               transform="rotate(90,0.353675,-0.353675)">
+              <g
+                 id="g150">
+                <path
+                   d="M -1.55415,2.0722 C -1.42464,1.29512 0,0.1295 0.38852,0 0,-0.1295 -1.42464,-1.29512 -1.55415,-2.0722"
+                   style="fill:none;stroke:#000000;stroke-width:0.6376;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                   id="path152" />
+              </g>
+            </g>
+          </g>
+          <g
+             id="g154">
+            <path
+               d="M 36.88174,0 H 31.86662 V 0.70735"
+               style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path156" />
+            <g
+               id="g158"
+               transform="rotate(90,16.286985,15.579635)">
+              <g
+                 id="g160">
+                <path
+                   d="M -1.55415,2.0722 C -1.42464,1.29512 0,0.1295 0.38852,0 0,-0.1295 -1.42464,-1.29512 -1.55415,-2.0722"
+                   style="fill:none;stroke:#000000;stroke-width:0.6376;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                   id="path162" />
+              </g>
+            </g>
+          </g>
+          <g
+             id="g164">
+            <path
+               d="M 36.88174,0 H 31.86662 V 0.70735"
+               style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path166" />
+            <g
+               id="g168"
+               transform="rotate(90,16.286985,15.579635)">
+              <g
+                 id="g170">
+                <path
+                   d="M -1.55415,2.0722 C -1.42464,1.29512 0,0.1295 0.38852,0 0,-0.1295 -1.42464,-1.29512 -1.55415,-2.0722"
+                   style="fill:none;stroke:#000000;stroke-width:0.6376;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                   id="path172" />
+              </g>
+            </g>
+          </g>
+          <g
+             id="g174">
+            <path
+               d="m -36.88174,0 h 5.01512 v 0.70735"
+               style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path176" />
+            <g
+               id="g178"
+               transform="rotate(90,-15.579635,-16.286985)">
+              <g
+                 id="g180">
+                <path
+                   d="M -1.55415,2.0722 C -1.42464,1.29512 0,0.1295 0.38852,0 0,-0.1295 -1.42464,-1.29512 -1.55415,-2.0722"
+                   style="fill:none;stroke:#000000;stroke-width:0.6376;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                   id="path182" />
+              </g>
+            </g>
+          </g>
+          <g
+             id="g184">
+            <path
+               d="m -36.88174,0 h 5.01512 v 0.70735"
+               style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path186" />
+            <g
+               id="g188"
+               transform="rotate(90,-15.579635,-16.286985)">
+              <g
+                 id="g190">
+                <path
+                   d="M -1.55415,2.0722 C -1.42464,1.29512 0,0.1295 0.38852,0 0,-0.1295 -1.42464,-1.29512 -1.55415,-2.0722"
+                   style="fill:none;stroke:#000000;stroke-width:0.6376;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                   id="path192" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

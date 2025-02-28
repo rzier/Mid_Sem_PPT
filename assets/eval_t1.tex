@@ -1,0 +1,14 @@
+\begin{table}[ht!]
+    \centering
+    \begin{tabularx}{\textwidth}{|c|c|X|}
+    \hline
+    \textbf{Name} & \textbf{Formula} & \textbf{Interpretation} \\ \hline
+        Accuracy & $\frac{TP + TN}{TP + FP + TN + FN}$ & Instances our network correctly predicted out of total size of dataset \\ \hline
+        Precision & $\frac{TP}{FP + TP}$ & Measures models ability to predict positive class \\ \hline
+        Recall & $\frac{TP}{FN + TP}$ & Measures Accuracy for positive class \\ \hline
+        F1 Score & $\frac{2 \cdot Precision \cdot Recall}{Precision + Recall}$ & harmonic Mean of Precision and Recall \\ \hline
+        Specificity & $\frac{TN}{FP + TN}$ & Measures model ability to correctly predict negitive instance \\ \hline
+        Sensitivity & $\frac{TP}{FN + TP}$ & Same as recall \\ \hline
+    \end{tabularx}
+    \caption{Evaluation Metrics}
+\end{table}

@@ -1,0 +1,28 @@
+\begin{figure}
+\centering
+\begin{tikzpicture}
+
+
+\node (inp1) [draw, rectangle, text centered, yshift=-2cm ] {\includegraphics[height=0.3\textheight]{/home/someone/me/projects/research/res/assets/ieee_ds_sample_dm.png}};
+
+
+\node (sn1) [draw, rectangle, text centered, right of=inp1, node distance=3cm, minimum width=3cm, minimum height=3cm, text width=2cm, fill=red!60!yellow] {Trained Encoder};
+
+
+\node (em1) [draw, rectangle, minimum height=3cm, right of=sn1, node distance=2cm, fill=yellow!20!white] {\rotatebox{90}{Embedding}};
+
+
+
+\node (cl) [draw, rectangle, right of=em1, node distance=1cm, xshift=1cm, text centered, fill=yellow!60!cyan, minimum width=2cm, minimum height=2cm] {Classifier};
+
+\node (op) [draw, circle, right of=cl, node distance=2cm, fill=red!51!green, stroke=white] {DFU};
+
+\draw[->] (inp1) -- (sn1);
+\draw[->] (sn1) -- (em1);
+\draw[->] (em1) -- (cl);
+\draw[<-] (cl) -- (op);
+
+
+\end{tikzpicture}
+\caption{Training Classifier SNN}
+\end{figure}

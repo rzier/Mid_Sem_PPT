@@ -1,0 +1,39 @@
+\begin{figure}
+\centering
+\begin{tikzpicture}
+
+
+\node (inp1) [draw, rectangle, text centered, yshift=-2cm ] {\includegraphics[height=3cm]{/home/someone/me/projects/research/res/assets/ieee_ds_sample_dm.png}};
+\node (inp2) [draw, rectangle, text centered, yshift=2cm] {\includegraphics[height=3cm]{/home/someone/me/projects/research/res/assets/ieee_ds_sample_cg.png}};
+
+
+\node (sn1) [draw, rectangle, text centered, right of=inp1, node distance=3cm, minimum width=3cm, minimum height=3cm, fill=red!60!yellow] {Encoder};
+
+\node (sn2) [draw, rectangle, text centered, right of=inp2, node distance=3cm, minimum width=3cm, minimum height=3cm, fill=red!60!yellow] {Encoder};
+
+\node (em1) [draw, rectangle, minimum height=3cm, right of=sn2, node distance=2cm, fill=yellow!20!white] {\rotatebox{90}{Embedding}};
+
+\node (em2) [draw, rectangle, minimum height=3cm, right of=sn1, node distance=2cm, fill=blue!20!white] {\rotatebox{90}{Embedding}};
+
+
+\node (cl) [draw, circle, right of=em1, below of=em1, node distance=2cm, xshift=1cm, text width=1cm, fill=red!60!cyan] {Triplet Loss};
+
+\node (op) [draw, circle, right of=cl, node distance=2cm, fill=blue!51!green, stroke=white] {Distinct};
+
+\draw[->] (inp2) -- (sn2);
+\draw[->] (inp1) -- (sn1);
+
+\draw[->] (sn1) -- (em2);
+\draw[->] (sn2) -- (em1);
+
+\draw[->] (em1) -- (cl);
+\draw[->] (em2) -- (cl);
+
+\draw[<-] (cl) -- (op);
+\draw[<->, thick] (sn1) -- (sn2) node[midway] {Weight Sharing};
+
+
+\end{tikzpicture}
+\caption{SNN Encoder Diagram}
+\end{figure}
+

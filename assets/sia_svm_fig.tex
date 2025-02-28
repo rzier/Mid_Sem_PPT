@@ -1,0 +1,28 @@
+\begin{figure}
+\centering
+\begin{tikzpicture}
+
+\node (c1) [draw, rectangle, text centered, minimum height=3cm, fill=red!30!white] {CNN1};
+\node (r1) [draw,   ellipse, text centered, right =of c1, ] {ReLU};
+\node (p1) [draw, rectangle, text centered, right =of r1, minimum height=2cm, fill=yellow!31!white] {POOL1};
+
+\node (c2) [draw, rectangle, text centered, right =of p1, minimum height=3cm, fill=red!30!white] {CNN2};
+\node (r2) [draw,   ellipse, text centered, right =of c2 ] {ReLU};
+\node (p2) [draw, rectangle, text centered, right =of r2 , minimum height=2cm, fill=yellow!31!white] {POOL2};
+
+\node (l1) [draw, rectangle, text centered, right =of p2, minimum height=3cm, fill=blue!20!white] {\rotatebox{90}{Linear}};
+
+\draw[->] (c1) -- (r1);
+\draw[->] (r1) -- (p1);
+
+\draw[->] (p1) -- (c2);
+\draw[->] (c2) -- (r2);
+\draw[->] (r2) -- (p2);
+
+\draw[->] (p2) -- (l1);
+
+
+
+\end{tikzpicture}
+\caption{Encoder of siamese network}
+\end{figure}

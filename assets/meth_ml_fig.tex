@@ -1,0 +1,65 @@
+\begin{sidewaysfigure}
+\resizebox{\textheight}{!}{
+\begin{tikzpicture}
+
+
+
+\node [draw, ellipse, text width=2cm] (dp_1) {Convert to Grayscale};
+\node [draw, ellipse, text width=2cm, below=of dp_1] (dp_2) {Image Normalization}; 
+\node [draw, ellipse, below=of dp_2, text width=2cm] (dp_3) {Divide Into Patches};
+
+\node [draw, dashed, fit=(dp_1)(dp_2)(dp_3)] (dp) {};
+
+\node [draw, rectangle, left=of dp] (inp) 
+{
+\includegraphics[width=1cm]{/home/someone/me/projects/research/res/assets/org_img.png} 
+};
+
+\node [draw, rectangle, right=of dp] (dped) {\includegraphics[width=1cm]{/home/someone/me/projects/research/res/assets/org_patched_img.png} };
+
+
+
+
+\node [draw=none, dashed, right=of dped, yshift=1cm ](fe) { };
+\node [draw, ellipse, text width=2cm, right of=fe] (fe_1) {GLCM};
+\node [draw, ellipse, text width=2cm, below=of fe_1] (fe_2) {PCA};
+\node [draw, dashed, rectangle,fit=(fe_1)(fe_2)] (Fe) { };
+
+%%\node [draw, rectangle, text width=2cm, right=of Fe] {
+%Representation
+%\includegraphics[width=2cm]{/home/someone/me/projects/research/res/assets/repr_heatmap.png}
+%};
+
+
+
+\node [draw=none, below=of inp]{Input};
+\node [draw=none, below=of Fe]{ Feature Extraction };
+
+
+\node [draw=none, rectangle, text centered,right=of Fe, text width=2cm] (rpr) {
+    \small{Representation} 
+    \includegraphics[width=3cm]{/home/someone/projects/research/res/assets/repr_heatmap.png}
+};
+\node [draw, rectangle, right=of rpr, minimum height=2cm] (cl) {Classifier};
+\node [draw=none, rectangle, below=of cl, text width=3cm, text centered] (wei) {
+Patches
+\includegraphics[angle=90,width=3cm]{/home/someone/projects/research/res/assets/patched_processed_img.png}
+};
+\node [draw, circle, text width=1cm,text centered, right=of cl, fill=red!80!blue] (op) {DFU};
+
+
+\draw[->, thick] (inp) -- (dp);
+\draw[->, thick] (dp)  -- (dped);
+\draw[->, thick] (dped)  -- (Fe);
+\draw[->, thick] (Fe)  -- (rpr);
+\draw[->, thick] (rpr)  -- (cl);
+
+\draw[<->, thick] (cl)  -- (wei) node[midway] {SVM};
+\draw[->, thick]  (cl)  -- (op);
+
+
+
+\end{tikzpicture}
+}
+\caption{Flowdiagram of Traditional ML Methodology}
+\end{sidewaysfigure}

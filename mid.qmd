@@ -1,0 +1,325 @@
+---
+title: Diabetic Foot Classification using Thermogram
+subtitle: Mid Sem Presentation
+date: today
+author: 
+    - name: Rahul Mishra
+      url: github.com/rzier
+      affiliation: 
+        - name: SVNIT
+        - department: Department of Computer Science
+    - name: Dr. Chandra Prakash
+      affiliation:
+        - name: Supervisor [Assistant Professor]
+institute: SVNIT, DoCSE India
+format:
+    revealjs:
+        auto-play-media: true
+titlegraphic: "assets/svnit.png"
+theme: night
+
+filters:
+    - diagram
+
+---
+
+# Problem Statement
+
+> Given a thermogram of patients foot identify whether it belongs to a diabetic or healthy person, and thereby deducing presence of diabetic foot ulcer.
+
+
+
+:::{.fragment}
+- Introduction
+
+> Brief Background of problem.
+
+:::
+:::{.fragment}
+- Previous Approaches
+:::
+:::{.fragment}
+- Limitations and Improvement of those Approaches
+:::
+:::{.fragment}
+- Experiment of Explanability 
+:::
+
+## Diabetic Foot Ulcer
+
+- A Condition caused by complication of diabeties namely ischemia (lack of blood flow) and neuropathy (damage of nerves).
+
+- It manifest as a superficial wound on the surface of foot, but here we tried to identify it from thermographic prospective.
+
+<center>
+![Diabetic Foot Ulcer](assets/dfu.jpeg)
+</center>
+
+
+## Diabeties and Thermogram
+
+
+Ischmeia and Neuropathy, causes a diabetic person to have distinct temperature distribution than that of normal person
+
+:::: {.columns}
+::: {.column}
+![](assets/foot.png){width="40%"}
+
+:::
+::: {.column}
+![](assets/foot_dia.png){width="40%"}
+
+:::
+::::
+
+## Proposed Methodology
+
+1. Shallow Learning Approach
+2. Siamese Network Approach
+    - Learning an encoder to have distilled embeddings of given thermograms.
+    - Classifiy based on those embeddings.
+
+## Siamese Network (Earlier Approach)
+
+::: {.r-stretch}
+<center>
+![CNN Encoder](assets/sia_enc_cnn.svg)
+</center>
+:::
+
+## Siamese Network (Classifier)
+
+::: {.r-stretch}
+
+![SVM Classifier](assets/classifier_sia.svg)
+
+:::
+
+
+## Results
+
+
+::: {.r-fit-text}
+
+| Accuracy | Precision | Recall | F1-Score |
+|----------|-----------|--------|----------|
+|   0.75   |    0.7    |  0.68  |    0.71  |
+
+</center>
+:::
+
+# Identifying Limitations
+
+# Untrained Embeddings
+
+> Following is the embedding of Untrained Encoder.
+
+## {background-image="assets/embedding2d_untrained_siamese.png" background-size="contain" auto-animate="true" background-color="black"}
+
+
+# Trained Embedding
+
+
+
+## {background-image="assets/embedding2d_siamese.png" background-size="contain" background-color="black"}
+
+## {background-image="assets/embedding2d_siamese.png" background-size="contain" background-color="black" background-opacity="0.5"}
+
+
+:::{.fragment}
+- Embeddings after training for 150 Epochs
+:::
+:::{.fragment}
+- Embedding did seperate somewhat but cleary a lot of overlap.
+:::
+:::{.fragment}
+- Quality Embeddings are bad, inter-cluster distance is very low and intra-cluster is very larger.
+:::
+
+## Addressing the Limitations
+
+- Since encoder have poor representation, therefore producing poor embeddings (representation of input).
+
+- Proposed Improvements
+    - Use a pretrained Model
+    - Extracting feature and train a DenseLayer.
+
+
+## ResNet18 Pretrained Model
+:::{.r-stretch}
+<center>
+![](assets/resnet18_arch.svg){style=color:black;transform:rotate(90deg); height="100%"  }
+</center>
+:::
+
+
+
+
+## Implementation
+
+- Extracting features from Avg Pool Layer.
+- Train a Dense Layer with 50 Neurons to produce a embedding of 50 Dimensions.
+
+
+# Training Process of Encoder
+
+## {background-video="assets/siamese_net_training.mp4" background-size="contain" background-color="black"}
+
+# Untrained Embeddings
+
+## {background-image="assets/siamese_train_1.png"}
+
+
+
+# Trained Embeddings
+
+## {background-image="assets/siamese_net_last.png"}
+
+
+## Results
+
+<center>
+| Accuracy | Precision | Recall | F1-Score |
+|----------|-----------|--------|----------|
+|   0.972  |    0.93   |  0.94  |   0.93   |
+
+</center>
+
+## Future Work
+
+- Finetune Pretrained Model
+- Explore other pretrained Model
+- Extend approach to work with unsegmented images.
+
+
+# Experiment
+
+> An attempt at visualizing evolution of diabetic foot from thermographic perspective.
+
+
+## {background-image="images_0001.png" auto-animate="true"}
+
+### Healthy
+
+::: {data-id="dia" style="background: #008022; width: 50px; height: 50px; overflow: hidden;"}
+
+:::
+
+## {background-video="transition.mp4" auto-animate="true" auto-animate-duration="1"}
+
+### Diabetic
+::: {data-id="dia" style="background: #ff2200; width: 130px; height: 50px; overflow: hidden"}
+:::
+
+## {background-image="transition_last.png" background-opacity="0.7"}
+
+### Diabetic
+::: {data-id="dia" style="background: #ff2200; width: 130px; height: 50px; overflow: hidden"}
+
+:::
+
+::: {.fragment}
+1. Learn a Function $F_\theta(x)=x$ that approximate the Identity, here $\theta$ are parameter of that function, as x is input **(Encoder-Decoder)** Model.
+:::
+
+::: {.fragment}
+2. Extract Features from dataset that capture these variations in the dataset **(Encoder)**.
+:::
+:::{.fragment }
+
+3. Continous mapping from those features to thermogram image to be able to observe changes **(Decoder)**.
+
+:::
+
+## {background-image="transition_last.png" background-opacity="0.7"}
+
+### Diabetic
+::: {data-id="dia" style="background: #ff2200; width: 130px; height: 50px; overflow: hidden"}
+
+:::
+::: {.fragment .fade-in}
+::: {.fragment .highlight-red .strike}
+
+4. Identify whether given set of features represent a diabetic or non diabetic foot with given confidence **(Classifer)**.
+:::
+:::
+
+# Proposed Network 1
+
+## PCA + Decoder
+
+![](assets/pca_arch.svg)
+
+## {background-video="assets/ThermalDecoderPCA_256_2.mp4" background-size="contain"}
+
+## {background-image="assets/ThermalDecoderPCA_256_2.png" background-opacity="0.5"}
+
+:::{.fragment}
+### Training of Decoder
+:::
+
+:::{.fragment}
+1. PCA causing the reconstructed output to be noisy, due to its inability to model non-linearity.
+:::
+
+:::{.fragment}
+2. Loss is also fluctuating a lot, (It might be because i didnt normalized input, or maybe optimizer overshooting due to noisy output)
+:::
+
+:::{.fragment}
+3. Reconstruction Loss: $L=\frac{1}{2} (x_o - x_r)^2$
+:::
+
+
+# Proposed Network 2
+
+## Architecture of Autoencoder
+![](assets/autoencoder.svg)
+
+
+# Training of Autoencoder
+
+## {background-video="assets/ThermalImageAutoencoder_50.mp4"}
+
+## {background-image="assets/ThermalImageAutoencoder_50.png" background-opacity="0.5"}
+
+:::{.fragment}
+### Training of Autoencoder
+:::
+
+:::{.fragment}
+1. The learned reconstruction is a lot less noisy, loss is therefore a lot more stable.
+:::
+
+:::{.fragment}
+2. Thermogram still not a perfect reconstruction.
+:::
+
+:::{.fragment}
+3. Reconstruction Loss: $L=\frac{1}{2} (x_o - x_r)^2$
+:::
+
+## Final Result
+
+:::{.r-stretch}
+- UI App to observe variations in resulting thermogram by varying the features.
+
+
+![Kivy App UI](assets/app_screenshot.png)
+
+:::
+
+
+## Future Work
+
+:::{.fragment}
+- Complete Visualization.
+:::
+:::{.fragment}
+- Implement Explainability of Various Models.
+:::
+:::{.fragment}
+- Finetuning and Experiment with different pretrained models.
+:::
+
+# Thank You
